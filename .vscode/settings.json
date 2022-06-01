@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+  }
+}

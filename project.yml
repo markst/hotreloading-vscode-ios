@@ -1,6 +1,6 @@
 name: Demo
 options:
-  bundleIdPrefix: com.mt
+  bundleIdPrefix: dev.mt
 packages:
   HotReloading:
     url: https://github.com/johnno1962/HotReloading.git
