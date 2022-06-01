@@ -6,5 +6,16 @@
   },
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
-  }
+  },
+  "sourcekit-lsp.serverPath": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
+  "sourcekit-lsp.serverArguments": [
+    "-Xswiftc",
+    "-sdk",
+    "-Xswiftc",
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk",
+    "-Xswiftc",
+    "-target",
+    "-Xswiftc",
+    "x86_64-apple-ios13.6-simulator"
+  ]
 }
