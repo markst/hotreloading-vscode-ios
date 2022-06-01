@@ -15,7 +15,7 @@
       "name": "Launch",
       "type": "lldb",
       "request": "launch",
-      "program": "${workspaceFolder}/.derivedData/Build/Products/Debug-${command:ios-debug.targetSdk}/Demo.app",
+      "program": "~/Library/Developer/Xcode/DerivedData/Build/Products/Debug-${command:ios-debug.targetSdk}/Demo.app",
       "iosBundleId": "dev.mt.Demo",
       "iosTarget": "select",
       "preLaunchTask": "${defaultBuildTask}"

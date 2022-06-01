@@ -19,10 +19,8 @@
         "Debug",
         "-sdk",
         "${command:ios-debug.targetSdk}",
-        "-clonedSourcePackagesDirPath",
-        "${workspaceFolder}/.packages",
         "-derivedDataPath",
-        "${workspaceFolder}/.derivedData",
+        "~/Library/Developer/Xcode/DerivedData",
         "-allowProvisioningUpdates",
         "ARCHS=arm64"
       ],
