@@ -12,3 +12,5 @@ Demo.xcodeproj
 # build
 .derivedData
 .packages
+.build
+.swiftpm
