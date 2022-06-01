@@ -1,0 +1,22 @@
+name: Demo
+options:
+  bundleIdPrefix: com.mt
+packages:
+  HotReloading:
+    url: https://github.com/johnno1962/HotReloading.git
+    from: 4.3.17
+targets:
+  Demo:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources: [Demo]
+    dependencies:
+      - sdk: SwiftUI.framework
+      - package: HotReloading
+    settings:
+      base:
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1
+        OTHER_LDFLAGS: "-Xlinker -interposable -Xlinker -undefined -Xlinker dynamic_lookup"
+        INFOPLIST_FILE: "Application/Info.plist"
