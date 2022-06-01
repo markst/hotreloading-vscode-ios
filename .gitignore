@@ -1,0 +1,14 @@
+## User settings
+xcuserdata/
+**/xcuserdata/
+
+## Generating version stuff
+*.ipa
+*.dSYM.*
+
+#xcodegen
+Demo.xcodeproj
+
+# build
+.derivedData
+.packages
