@@ -24,8 +24,7 @@
         "-derivedDataPath",
         "${workspaceFolder}/.derivedData",
         "-allowProvisioningUpdates",
-        "ARCHS=arm64",
-        "OTHER_LDFLAGS=-Xlinker -interposable -Xlinker -undefined -Xlinker dynamic_lookup"
+        "ARCHS=arm64"
       ],
       "group": {
         "kind": "build",
