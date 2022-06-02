@@ -20,7 +20,7 @@
         "-sdk",
         "${command:ios-debug.targetSdk}",
         "-derivedDataPath",
-        "~/Library/Developer/Xcode/DerivedData",
+        "~/Library/Developer/Xcode/DerivedData/Demo-avuzscipzqxczrbltxhlvbnxujdo", // <- use `BUILD_DIR`?
         "-allowProvisioningUpdates",
         "ARCHS=arm64"
       ],
