@@ -12,7 +12,7 @@ let package = Package(
   platforms: [
     .iOS(.v14),
     // disable building on macOS
-    .macOS("99.0"),
+    .macOS("99.0")
   ],
   products: [
     .library(name: packageName, targets: [packageName])

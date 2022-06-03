@@ -1,0 +1,13 @@
+swiftlint_version: 0.47.1
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+
+identifier_name:
+  min_length: 1
+  max_length: 80
+
+type_name:
+  min_length: 1
+  max_length: 80
