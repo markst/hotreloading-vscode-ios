@@ -5,6 +5,9 @@ packages:
   HotReloading:
     url: https://github.com/johnno1962/HotReloading.git
     branch: main
+  Inject:
+    url: https://github.com/krzysztofzablocki/Inject.git
+    branch: main
 targets:
   Demo:
     type: application
@@ -14,6 +17,7 @@ targets:
     dependencies:
       - sdk: SwiftUI.framework
       - package: HotReloading
+      - package: Inject
     settings:
       base:
         CURRENT_PROJECT_VERSION: 1

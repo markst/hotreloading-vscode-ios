@@ -8,11 +8,11 @@ struct ContentView: View {
         .background(Color.red)
         .border(.blue)
     }
-    .eraseToAnyView()
+    .enableInjection()
   }
 
   #if DEBUG
-    @ObservedObject var iO = injectionObserver
+    @ObserveInjection var inject
   #endif
 }
 
