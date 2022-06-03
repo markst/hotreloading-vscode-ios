@@ -4,7 +4,7 @@ options:
 packages:
   HotReloading:
     url: https://github.com/johnno1962/HotReloading.git
-    from: 4.3.17
+    branch: main
 targets:
   Demo:
     type: application
