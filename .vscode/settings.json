@@ -7,7 +7,6 @@
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
   },
-  "extensions": ["sswg.swift-lang"],
 
   "swiftlint.enable": true,
   "swiftlint.path": "~/.mint/bin/swiftlint",
