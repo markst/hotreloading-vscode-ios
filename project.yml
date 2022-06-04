@@ -13,7 +13,7 @@ targets:
     type: application
     platform: iOS
     deploymentTarget: "14.0"
-    sources: [Demo]
+    sources: [Application, Demo]
     dependencies:
       - sdk: SwiftUI.framework
       - package: HotReloading
