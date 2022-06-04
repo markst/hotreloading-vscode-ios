@@ -17,9 +17,14 @@ let package = Package(
   products: [
     .library(name: packageName, targets: [packageName])
   ],
+  dependencies: [
+    .package(url: "https://github.com/johnno1962/HotReloading.git", .branch("main")),
+    .package(url: "https://github.com/krzysztofzablocki/Inject.git", .branch("main"))
+  ],
   targets: [
     .target(
       name: packageName,
+      dependencies: ["HotReloading", "Inject"],
       path: packageName
     )
   ]

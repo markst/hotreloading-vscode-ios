@@ -1,5 +1,9 @@
 import SwiftUI
 
+#if DEBUG
+  import Inject
+#endif
+
 struct ContentView: View {
   var body: some View {
     VStack {
