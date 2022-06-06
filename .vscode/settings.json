@@ -24,19 +24,13 @@
     "-Xswiftc",
     "-target",
     "-Xswiftc",
-    "arm64-apple-ios15.5-simulator"
-  ],
+    "arm64-apple-ios14.0-simulator",
+    "-Xcc",
+    "-DSWIFT_PACKAGE=0" // Build package as if it were Application?
+  ]
 
   // "swift.SDK"
   // "swift.buildPath": "~/Library/Developer/Xcode/DerivedData/Demo",
-  "swift.buildArguments": [
-    "-Xswiftc",
-    "-sdk",
-    "-Xswiftc",
-    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk",
-    "-Xswiftc",
-    "-target",
-    "-Xswiftc",
-    "arm64-apple-ios15.5-simulator"
-  ]
+  // "swift.backgroundCompilation": true,
+  // "swift.buildArguments": []
 }

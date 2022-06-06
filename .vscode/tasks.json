@@ -4,6 +4,29 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "type": "swift",
+      "problemMatcher": ["$swiftc"],
+      "group": "build",
+      "label": "swift: Build Dependencies",
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "command": "swift",
+      "args": [
+        "build",
+        "--target",
+        "Inject",
+        "-Xswiftc",
+        "-sdk",
+        "-Xswiftc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk",
+        "-Xswiftc",
+        "-target",
+        "-Xswiftc",
+        "arm64-apple-ios14.0-simulator"
+      ]
+    },
+    {
       "label": "xcodegen",
       "type": "process",
       "command": "xcodegen"
