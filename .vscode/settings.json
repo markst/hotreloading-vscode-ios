@@ -4,13 +4,12 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
+
   "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+    "editor.defaultFormatter": "vknabel.vscode-swiftlint"
   },
 
   "swiftlint.enable": true,
-  "swiftlint.path": "~/.mint/bin/swiftlint",
-  "swiftlint.forceExcludePaths": [".build", ".swiftpm"],
   "swiftlint.configSearchPaths": ["./.swiftlint.yml"],
   "swiftlint.autoLintWorkspace": false,
 

@@ -1,8 +1,13 @@
 swiftlint_version: 0.47.1
 
+excluded:
+  - .vscode
+  - .build
+
 opt_in_rules:
   - empty_count
   - empty_string
+  - indentation_width
 
 identifier_name:
   min_length: 1
@@ -11,3 +16,8 @@ identifier_name:
 type_name:
   min_length: 1
   max_length: 80
+
+indentation: 2
+
+indentation_width:
+  indentation_width: 2

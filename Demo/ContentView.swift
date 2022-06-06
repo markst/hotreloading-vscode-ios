@@ -1,7 +1,7 @@
 import SwiftUI
 
 #if DEBUG
-  import Inject
+import Inject
 #endif
 
 struct ContentView: View {
@@ -16,7 +16,7 @@ struct ContentView: View {
   }
 
   #if DEBUG
-    @ObserveInjection var inject
+  @ObserveInjection var inject
   #endif
 }
 
