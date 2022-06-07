@@ -19,11 +19,11 @@
         "-Xswiftc",
         "-sdk",
         "-Xswiftc",
-        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.5.sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk",
         "-Xswiftc",
         "-target",
         "-Xswiftc",
-        "arm64-apple-ios14.0-simulator"
+        "arm64-apple-ios13.0-simulator"
       ]
     },
     {
