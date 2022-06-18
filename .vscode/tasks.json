@@ -35,6 +35,11 @@
       "command": "xcodegen"
     },
     {
+      "label": "clean",
+      "type": "shell",
+      "command": "rm -R -f ~/Library/Developer/Xcode/DerivedData/Demo/Result.xcresult"
+    },
+    {
       "label": "xcodebuild",
       "type": "process",
       "command": "xcodebuild",
@@ -46,11 +51,11 @@
         "-sdk",
         "${command:ios-debug.targetSdk}",
         "-derivedDataPath",
-        "~/Library/Developer/Xcode/DerivedData/Demo-avuzscipzqxczrbltxhlvbnxujdo", // <- use `BUILD_DIR`?
-        // "-clonedSourcePackagesDirPath",
-        // "./Main/.build",
-        // "-resultBundlePath",
-        // "./ResultBundlePath",
+        "~/Library/Developer/Xcode/DerivedData/Demo", // <- use `BUILD_DIR`?
+        "-clonedSourcePackagesDirPath",
+        "./Main/.build",
+        "-resultBundlePath",
+        "~/Library/Developer/Xcode/DerivedData/Demo/Result.xcresult",
         "-allowProvisioningUpdates",
         "ARCHS=arm64"
       ],
@@ -58,7 +63,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": ["xcodegen"]
+      "dependsOn": ["xcodegen", "clean"]
     }
   ]
 }
