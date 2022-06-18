@@ -18,7 +18,8 @@ let package = Package(
     .library(name: packageName, targets: [packageName])
   ],
   dependencies: [
-    .package(url: "https://github.com/krzysztofzablocki/Inject.git", .branch("main"))
+    .package(url: "https://github.com/krzysztofzablocki/Inject.git", .branch("main")),
+    .package(url: "https://github.com/johnno1962/HotReloading.git", .branch("main"))
   ],
   targets: [
     .target(
@@ -26,6 +27,12 @@ let package = Package(
       dependencies: [
         .byNameItem(
           name: "Inject",
+          condition: .when(platforms: [
+            .iOS
+          ])
+        ),
+        .byNameItem(
+          name: "HotReloading",
           condition: .when(platforms: [
             .iOS
           ])
