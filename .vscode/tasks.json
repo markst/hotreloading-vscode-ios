@@ -47,6 +47,10 @@
         "${command:ios-debug.targetSdk}",
         "-derivedDataPath",
         "~/Library/Developer/Xcode/DerivedData/Demo-avuzscipzqxczrbltxhlvbnxujdo", // <- use `BUILD_DIR`?
+        // "-clonedSourcePackagesDirPath",
+        // "./Main/.build",
+        // "-resultBundlePath",
+        // "./ResultBundlePath",
         "-allowProvisioningUpdates",
         "ARCHS=arm64"
       ],
