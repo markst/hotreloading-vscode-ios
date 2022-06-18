@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageName = "Demo"
+let packageName = "Main"
 
 // Necessary for `sourcekit-lsp` support in VSCode:`
 
@@ -31,7 +31,7 @@ let package = Package(
           ])
         )
       ],
-      path: packageName
+      path: "Sources"
     )
   ]
 )

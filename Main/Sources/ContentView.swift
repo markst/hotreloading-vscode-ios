@@ -4,10 +4,15 @@ import SwiftUI
 import Inject
 #endif
 
-struct ContentView: View {
-  var body: some View {
+public struct ContentView: View {
+
+  public init() {
+
+  }
+
+  public var body: some View {
     VStack {
-      Text("Hello World")
+      Text("Testing")
         .padding()
         .background(Color.red)
         .border(.blue)
