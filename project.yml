@@ -2,22 +2,17 @@ name: Demo
 options:
   bundleIdPrefix: dev.mt
 packages:
-  HotReloading:
-    url: https://github.com/johnno1962/HotReloading.git
-    branch: main
-  Inject:
-    url: https://github.com/krzysztofzablocki/Inject.git
-    branch: main
+  Main:
+    path: ./Main
 targets:
   Demo:
     type: application
     platform: iOS
     deploymentTarget: "14.0"
-    sources: [Application, Demo]
+    sources: [Application]
     dependencies:
       - sdk: SwiftUI.framework
-      - package: HotReloading
-      - package: Inject
+      - package: Main
     settings:
       base:
         CURRENT_PROJECT_VERSION: 1

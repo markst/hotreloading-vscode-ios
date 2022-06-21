@@ -24,12 +24,20 @@
         "-target",
         "-Xswiftc",
         "arm64-apple-ios13.0-simulator"
-      ]
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/Main"
+      }
     },
     {
       "label": "xcodegen",
       "type": "process",
       "command": "xcodegen"
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "rm -R -f ~/Library/Developer/Xcode/DerivedData/Demo/Result.xcresult"
     },
     {
       "label": "xcodebuild",
@@ -43,7 +51,11 @@
         "-sdk",
         "${command:ios-debug.targetSdk}",
         "-derivedDataPath",
-        "~/Library/Developer/Xcode/DerivedData/Demo-avuzscipzqxczrbltxhlvbnxujdo", // <- use `BUILD_DIR`?
+        "~/Library/Developer/Xcode/DerivedData/Demo", // <- use `BUILD_DIR`?
+        "-clonedSourcePackagesDirPath",
+        "./Main/.build",
+        "-resultBundlePath",
+        "~/Library/Developer/Xcode/DerivedData/Demo/Result.xcresult",
         "-allowProvisioningUpdates",
         "ARCHS=arm64"
       ],
@@ -51,7 +63,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "dependsOn": ["xcodegen"]
+      "dependsOn": ["xcodegen", "clean"]
     }
   ]
 }

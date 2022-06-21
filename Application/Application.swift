@@ -1,4 +1,5 @@
 import SwiftUI
+import Main
 
 #if DEBUG
 @_exported import Inject
