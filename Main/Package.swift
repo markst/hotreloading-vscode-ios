@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let packageName = "Demo"
+let packageName = "Main"
 
 // Necessary for `sourcekit-lsp` support in VSCode:`
 
@@ -18,7 +18,8 @@ let package = Package(
     .library(name: packageName, targets: [packageName])
   ],
   dependencies: [
-    .package(url: "https://github.com/krzysztofzablocki/Inject.git", .branch("main"))
+    .package(url: "https://github.com/krzysztofzablocki/Inject.git", .branch("main")),
+    .package(url: "https://github.com/johnno1962/HotReloading.git", .branch("main"))
   ],
   targets: [
     .target(
@@ -29,9 +30,15 @@ let package = Package(
           condition: .when(platforms: [
             .iOS
           ])
+        ),
+        .byNameItem(
+          name: "HotReloading",
+          condition: .when(platforms: [
+            .iOS
+          ])
         )
       ],
-      path: packageName
+      path: "Sources"
     )
   ]
 )
