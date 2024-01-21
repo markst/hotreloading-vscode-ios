@@ -10,3 +10,9 @@ Demonstrating vscode development environment using xcodegen + HotReloading.
 - SwiftUI injection property wrapper with [Inject](https://github.com/krzysztofzablocki/Inject.git)
 
 ![hotreloading-vscode-ios 2022-06-03 20_10_56](https://user-images.githubusercontent.com/274318/171922061-cabbb0aa-b2ba-4ade-a606-41a06c3c2ca3.gif)
+
+## XcodeGen Extension for Visual Studio Code
+
+I have begun the development of an XcodeGen Extension for Visual Studio Code, designed to further streamline the process of working with Xcode projects in VSCode. This extension aims to make it easier to generate and manage Xcode project files directly from the VSCode environment.
+
+For more information, updates, and contributions, check out the extension repository: [vscode-xcodegen-builder](https://github.com/markst/vscode-xcodegen-builder).
